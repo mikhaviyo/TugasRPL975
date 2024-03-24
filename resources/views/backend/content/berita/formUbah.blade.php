@@ -8,7 +8,7 @@
                 <form action="{{route('berita.prosesUbah')}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
-                        <label class="form-label">Nama Berita</label>
+                        <label class="form-label">Judul Berita</label>
                         <input type="text" name="judul_berita" value="{{$berita->judul_berita}}" class="form-control @error('judul_berita') is-invalid @enderror">
                         @error('judul_berita')
                         <span style="color: red; font-weight: 600; font-size: 9pt">{{$message}}</span>
